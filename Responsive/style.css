@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700');
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main-screen{
+    min-height: 100vh;
+    width: 100%;
+}
+#top{
+    width: 100%;
+    min-height: 60vh;
+    background-image: url(https://plus.unsplash.com/premium_photo-1695575593603-1f42ca27bb6d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    /* background-position: center; */
+    background-position: 50% 60%;
+}
+#overlay{
+/* so that child(text) yaa absolute wala element relative ky andr rahay */
+    position: relative;
+    width: 100%;
+    min-height: inherit;
+    background-color: rgba(0, 0, 0, 0.171);
+}
+#text{
+    /* height wise center krta h */
+    align-items: center;
+/* abs move krwata h with help of top and bottom aur parent sy bahir b jaa skta h with abs */
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    bottom: 20%;
+    /* otop/bottom */
+    padding: 0 10vw;
+    color: crimson;
+}
+#text-right{
+    width: 60%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+#text-right p{
+    font-size: 20px;
+    color:
+    mediumblue;
+    width:40%;
+}
+#text h1{
+    font-weight: 800;
+    font-size: 6vw;
+}
+#text-right i{
+    color:crimson;
+}
+#bottom{
+    min-height: 40vh;
+    width: 100%;
+    background-color: blue;
+    display: flex;
+}
+#b1{
+    min-height: inherit;
+    padding: 30px;
+    width: 25%;
+    height: 100%;
+    background-color: wheat;
+}
+#b1 p{
+    font-size: 18px;
+    margin-top: 20px;
+}
+#b2{
+    width: 25%;
+    min-height: inherit;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1511268559489-34b624fbfcf5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+#b3{
+    width: 20%;
+    height: 100%;
+    min-height: inherit;
+    /* background-color: darkorange; */
+}
+#b3top{
+    padding: 20px;
+    width: 100%;
+    min-height: 20vh;
+    /* height: 50%; */
+    background-color: orangered;
+    color: white;
+}
+#b3top p{
+    font-size: 15px;
+    margin-top: 20px;
+}
+#b3bottom{
+    min-height: 20vh;
+    width: 100%;
+    /* height: 50%; */
+    background-image: url(https://media.istockphoto.com/id/1337260312/photo/floral-seamless-pattern-multicolored-flowers-peonies-on-a-black-background.jpg?s=2048x2048&w=is&k=20&c=uhJ-aDQmzfkVjTODBCG8dWp-jUcyD53PwO6t00YPd1Q=);
+    background-size: cover;
+    background-position: center;
+}
+#b4{
+    width: 30%;
+    min-height: inherit;
+    height: 100%;
+    padding: 30px;
+    color: white;
+    background-color: #444;
+}
+.notf{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.notf #photo{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: red;
+    background-image: url(https://tse3.mm.bing.net/th?id=OIP.XWF3NdzuPVj6QSP1QPiv8AHaEs&pid=Api&P=0&h=220);
+    background-size: cover;
+    background-position: center;
+}
+.notf p{
+    width: 90%;
+    font-size: 12px;
+}
+#photo1{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: red;
+    background-image: url(https://tse2.mm.bing.net/th?id=OIP.yY--6KA1r0-Tn7r7mj0jDAHaEg&pid=Api&P=0&h=220);
+    background-size: cover;
+    background-position: center;
+}
+@media (max-width:500px){
+    #overlay #text{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #overlay #text #text-right{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    #overlay #text #text-right p{
+        width:initial;
+        margin-top: 20px;
+    }
+    #overlay #text #text-right #icons{
+        margin-top: 30px;
+    }
+    #text h1{
+        font-size: 10vw;
+    }
+    #bottom{
+        min-height: 20vh;
+        flex-direction: column;
+    }
+    #b1{ width: 100%;}
+    #b2{
+        min-height: 40vh;
+        width: 100%;}
+    #b3{
+        flex-direction: column;
+        width: 100%;
+    }
+    #b3top{
+        min-height: 10vh;
+    }
+    #b4{
+        min-height: 30vh;
+        width: 100%;}
+}
