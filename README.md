@@ -11,8 +11,7 @@ This is a collection of landing pages I created using HTML and CSS, designed to 
 
 ### 2. **Non-Responsive Landing Pages**
 #### **Rooh Afza**
-- A vibrant and colorful landing page inspired by traditional aesthetics.
-- Perfect for cultural or beverage-related projects.
+- A perfect landing page for beverage-related projects.
 
 #### **Landing Page**
 - A minimalist and clean design suitable for showcasing basic content.
@@ -22,8 +21,11 @@ This is a collection of landing pages I created using HTML and CSS, designed to 
 
 ## Screenshots
 
+### Urban Muse
+https://urban-muse.netlify.app/
+
 ### Rooh Afza
 ![alt text](image.png) 
 
-### Unnamed Landing Page
+### Non-Responsive Landing Page
 ![alt text](image-1.png)
